@@ -7,6 +7,14 @@ public class Complex {
         this.im = im;
     }
 
+    public double getRe() {
+        return re;
+    }
+
+    public double getIm() {
+        return im;
+    }
+
     public Complex add(Complex other) {
         return new Complex(re + other.re, im + other.im);
     }

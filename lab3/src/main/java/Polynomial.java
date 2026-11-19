@@ -5,6 +5,14 @@ public class Polynomial {
         this.coef = coef;
     }
 
+    public Complex get(int i) {
+        return coef[i];
+    }
+
+    public int size() {
+        return coef.length;
+    }
+
     public Polynomial add(Polynomial other) {
         int len = Math.max(coef.length, other.coef.length);
         Complex[] res = new Complex[len];
